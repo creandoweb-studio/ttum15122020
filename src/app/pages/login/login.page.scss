@@ -47,6 +47,7 @@
         grid-column: 2 / 13;
         grid-row: 2 / 12;
         background-color: (var(--colorTextoGral));
+        // background: linear-gradient(var(--bgGradient));
         border-radius: 40px 0 0 40px;
         margin-left: -5%;
         &--content{
