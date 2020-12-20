@@ -1,44 +1,87 @@
 <ion-content>
-    <div>
-        <div id="container">
-            <h4 id="titulo">Regístrate y disfruta el mejor servicio</h4>
-            <ion-grid>
-                <ion-row>
-                    <ion-col>
-                        <button id="redes"><img src="../../../assets/img/google.png" width="60" alt=""></button>
-                    </ion-col>
-                    <ion-col>
-                        <button id="redes"><img src="../../../assets/img/facebook.png" width="60" alt=""></button>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
-            <div id="datos">
-                <ion-grid>
-                    <ion-input id="inp" placeholder="Nombre Completo"></ion-input>
-                    <br>
-                    <ion-row>
-                        <ion-col>
-                            <ion-input id="inp" value="Colombia" disabled></ion-input>
-                        </ion-col>
-                        <ion-col>
-                            <ion-input id="inp" placeholder="Ciudad"></ion-input>
-                        </ion-col>
-                    </ion-row>
-                    <br>
-                    <ion-input id="inp" placeholder="E-mail"></ion-input>
-                    <br>
-                    <ion-input id="inp" placeholder="Teléfono"></ion-input>
-                    <br><br>
-                </ion-grid>
+    <div class="wrapper">
+        <div class="wrapper__encabezado">
+            <div class="wrapper__encabezado--logo">
             </div>
-            <div id="btnActions">
-                <ion-grid>
+        </div>
+
+        <div class="wrapper__negro"></div>
+        <div class="wrapper__arriba"></div>
+        <div class="wrapper__abajo"></div>
+
+        <div class="wrapper__container">
+            <div class="wrapper__container--content">
+                
+                <h4 class="titulo">Regístrate y disfruta el mejor servicio</h4>
+                
+                <ion-grid class="btnRedes">
+                    <ion-row>
+                        
+                        <ion-col>
+                            <button class="button button-clear">
+                                <img src="../../../assets/img/google.svg" width="60" alt="">
+                            </button>
+                        </ion-col>
+                        
+                        <ion-col>
+                            <button class="button button-clear">
+                                <img src="../../../assets/img/facebook.svg" width="60" alt="">
+                            </button>
+                        </ion-col>
+
+                    </ion-row>
+                </ion-grid>
+                    <div class="datos">
+
+                        <ion-grid>
+                            <ion-col>
+                                <ion-input class="entradaForm entradaNombre" placeholder="Nombre Completo"></ion-input>
+                            </ion-col>
+
+                            <ion-row>
+
+                                <ion-col>
+                                    <ion-input class="entradaForm entradaPais" value="Colombia" disabled></ion-input>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-input class="entradaForm entradaPai" placeholder="Ciudad"></ion-input>
+                                </ion-col>
+
+                            </ion-row>
+                            
+                            <ion-col>
+                                <ion-input class="entradaForm entradaMail" placeholder="E-mail"></ion-input>
+                            </ion-col>
+                            
+                            <ion-col>
+                                <ion-input class="entradaForm entradaTel" placeholder="Teléfono"></ion-input>
+                            </ion-col>
+                        </ion-grid>
+                        
+                    </div>
+                <ion-grid class="btnActions">
+                    
                     <ion-col>
-                        <button [routerLink]="['/home']" id="btact1">Cancelar</button>
+                        <button class="button btn btnAtras" [routerLink]="['/home']" id="btact1">
+                            <span class="icoElipse">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                            </span>
+        
+                            <span class="btnText">Cancelar</span>
+                        </button>
                     </ion-col>
+
                     <ion-col>
-                        <button id="btact2">Guardar </button>
+                        
+                        <button class="button btn btnAdelante">
+                            <span class="btnText">Guardar</span>
+                            <span class="icoElipse">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </button>
+
                     </ion-col>
+
                 </ion-grid>
             </div>
         </div>
