@@ -1,0 +1,12 @@
+.wrapper{
+    // background-color: yellow;
+    &__list{
+        // background-color: orangered;
+        &--item{
+            background-color: goldenrod !important;
+        }
+    }
+}
+.prueba{
+    background-color: palevioletred;
+}
